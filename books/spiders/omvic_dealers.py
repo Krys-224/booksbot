@@ -5,7 +5,7 @@ class OmvicDealersSpider(scrapy.Spider):
     name = "omvic_dealers"
     allowed_domains = ["omvic.ca"]
 
-    def start_requests(self):
+    async def start(self):
         url = (
             "https://www.omvic.ca/dealer-search/"
             "?dealership_city=Toronto&search_type=dealership"
