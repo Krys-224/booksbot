@@ -7,3 +7,6 @@ NEWSPIDER_MODULE = 'books.spiders'
 
 ROBOTSTXT_OBEY = True
 HTTPCACHE_ENABLED = True
+ADDONS = {
+    "scrapy_zyte_api.Addon": 500,
+}
